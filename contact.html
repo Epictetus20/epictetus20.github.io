@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Epictetus</title>
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+
+
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;} 
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: lightblue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #455ba9;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+      <link href="style.css" rel=" stylesheet" type="text/css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id="topHead">
+      <div id="logoContainer">
+          <a href="https:\\ee.hmu.gr">
+              <img src="hmu.png" id="logo"/> 
+          </a>
+      </div>    
+      <nav id="topnav">    
+          <a class="" href="signup.html">Sign up</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a class="" href="login.html">Login</a>
+          <a class="" href="news.html">News</a>
+          <a class="" href="index.html">Epictetus</a>
+      
+       </nav> 
+    </header>
+    
+        
+    
+    <h1>Contact Form</h1>
+
+    <div class="container">
+      <form >
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email..">
+        <br><br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="What is your question?" style="height:200px"></textarea>
+
+        <input type="submit" onclick="review()" id="review" value="Submit">
+      </form>
+    </div>
+
+    <script>
+      function review(){
+        
+      }
+
+    </script>
+  </body>
+</html>
